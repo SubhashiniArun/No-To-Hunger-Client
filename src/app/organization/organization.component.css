@@ -1,0 +1,22 @@
+body {
+    background:#7E685A;
+  background:-webkit-linear-gradient(to bottom,#C2CAD0,#E3AFBC);
+  background: linear-gradient(to bottom,#C2CAD0,#E3AFBC);
+}
+.p{
+  color:#950740;
+}
+.carousel-inner {
+  border-radius: 0 10px 10px 0;
+  right: -5px;
+}
+.carousel-item {
+  background:#7E685A;
+  background:-webkit-linear-gradient(to bottom,#C2CAD0,#E3AFBC);
+  background: linear-gradient(to bottom,#C2CAD0,#E3AFBC);
+  text-align:right;
+}
+.carousel-caption {
+  text-align: left;
+  left: 5%;
+}

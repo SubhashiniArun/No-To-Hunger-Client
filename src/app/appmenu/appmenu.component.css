@@ -1,0 +1,63 @@
+.navbar{
+  color: #F64C72;
+}
+#navbarHome{
+  color:#FFFFFF;
+}
+header {
+	  color:#FFFFFF;
+    background:#2E1114;
+	}
+.login-item{
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  border-radius: 10px 10px 10px 10px;
+  text-decoration: none;
+  float: left;  
+}
+span:before{
+  content:" ";
+  display:inline-block; 
+    width:32px
+}
+.nav-link{
+display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  border-radius: 10px 10px 10px 10px;
+  text-decoration: none;
+  float: left;
+}
+.nav-link:hover{
+background-color: #111;
+}
+.active{
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  border-radius: 10px 10px 10px 10px;
+  text-decoration: none;
+  float: left;
+  background-color: #F64C72;  
+}
+.login-item:hover{
+  background-color: #111;
+  }
+
+  #dropdown-item:active {     
+    color:#F64C72;    
+}
+.Orgwelcome-tag:before{
+  content:" ";
+  display:inline-block; 
+    width:800px
+}
+.Recwelcome-tag:before{
+content:" ";
+  display:inline-block; 
+    width:930px
+}

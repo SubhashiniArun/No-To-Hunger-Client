@@ -1,0 +1,94 @@
+<section class="login-block">
+
+<br><br>
+<div class="container signLog">
+<div class="row">
+<div class="col-md-5 login-sec">
+<mat-card class="login-card">
+<mat-card-content>
+<form #loginRecipient="ngForm" (ngSubmit)="onSubmit()">
+<h2 style="color:#fff;">Recipient Log In</h2>
+<br>
+<div class="myGroup" style="font-size: 16px">
+<mat-form-field style="background-color:#FFFFFF;" appearance="outline">
+ <input matInput placeholder="Username"  formControlName="username"  required [(ngModel)]="credentials.username">
+<mat-error>Please provide a valid username</mat-error>
+</mat-form-field>
+</div>
+<br>
+<br>
+<div class="myGroup" style="font-size: 16px">
+<mat-form-field style="background-color:#FFFFFF;"  appearance="outline">
+<input matInput type="password" placeholder="Password" formControlName="password" required [(ngModel)]="credentials.password">
+<mat-error>Please provide a valid password</mat-error>
+</mat-form-field>
+</div>
+<br>
+<button (click)=checkRecipientLogin() mat-raised-button color="#fff" class="btn my-2 mr-2">Login</button>
+</form>
+<button (click)=registerRecipient() mat-raised-button color="#fff" class="btn my-2 mr-2"> Sign Up </button>
+
+</mat-card-content>
+</mat-card>
+</div>
+
+<div class="col-md-7 banner-sec">
+
+<div id="carouselExamples" class="carousel slide" data-ride="carousel">
+<ol class="carousel-indicators">
+<li data-target="#carouselExamples" data-slide-to="0" class="active"></li>
+<li data-target="#carouselExamples" data-slide-to="1"></li>
+<li data-target="#carouselExamples" data-slide-to="2"></li>
+</ol>
+<div class="carousel-inner" role="listbox">
+
+<div class="carousel-item active">
+<br><br>
+<img class="d-block img-fluid" src="../assets/food-donate.jpg" style="max-height: 390px; width:900px;" alt="First-slide">
+<div class="after"></div>
+<div class="carousel-caption d-none d-md-block">
+<div class="banner-text">
+<h2>No-To-Hunger</h2>
+<p>Welcome to No-To-Hunger</p>
+</div>
+</div>
+</div>
+
+<div class="carousel-item">
+<br><br>
+<img class="d-block img-fluid" src="../assets/food-waste-home3.jpg" style="max-height: 390px; width:900px;" alt="Second-slide">
+<div class="after"></div>
+<div class="carousel-caption d-none d-md-block">
+<div class="banner-text">
+<h2>No-To-Hunger</h2>
+<p style="color:#950740; text-align:left;">Welcome to No-To-Hunger</p>
+</div>
+</div>
+</div>
+
+<div class="carousel-item">
+<br><br> 
+<img class="d-block img-fluid" src="../assets/food-waste-home4.jpg" style="max-height: 390px; width:900px;" alt="Third-slide">
+<div class="after"></div>
+<div class="carousel-caption d-none d-md-block">
+<div class="banner-text">
+<h2>No-To-Hunger</h2>
+<p>Welcome to No-To-Hunger</p>
+</div>
+</div>
+</div>
+
+</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="text-center">
+    <app-organizationregister *ngIf="action === 'register'" ></app-organizationregister>
+</div>
+
+
+<br><br><br><br><br><br><br><br><br><br><br><br>
+
+</section>

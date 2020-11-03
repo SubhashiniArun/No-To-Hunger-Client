@@ -1,0 +1,54 @@
+mat-card {
+  max-width: 400px;
+  margin: 4em auto;
+  text-align: center;
+}
+
+mat-form-field {
+  display: block;
+}
+::ng-deep .mat-form-field-flex > .mat-form-field-infix { padding: 0.8em 2px !important;}
+::ng-deep .mat-form-field-appearance-outline .mat-form-field-label { margin-top:-15px; }
+::ng-deep label.ng-star-inserted { transform: translateY(-0.59375em) scale(.75) !important; }
+.btn{
+  background: #fff;
+  
+    color:#6F2232;
+}
+.login-card{
+  background-color:#AC3B61;
+  width:600px;
+}
+.p{
+color:#884888;
+font-family: 'Roboto', sans-serif;
+}
+
+.h2{
+  text-align:"center";
+}
+.login-block{
+  background:#7E685A;
+  background:-webkit-linear-gradient(to bottom,#C2CAD0,#E3AFBC);
+  background: linear-gradient(to bottom,#C2CAD0,#E3AFBC);
+  float:left;
+  width:100%;
+  padding:50px;
+  font-family:'Montserrrat','sans-serif';
+}
+.signLog {
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 15px 20px 0px rgba(0,0,0,0.1);
+}
+.carousel-inner {
+  border-radius: 0 10px 10px 0;
+  right: -15px;
+}
+.carousel-item {
+  background:  #fff;
+}
+.carousel-caption {
+  text-align: left;
+  left: 5%;
+}

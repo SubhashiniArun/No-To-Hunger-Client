@@ -1,0 +1,45 @@
+<section class="register-block">
+<div class="container signLog">
+<div class="row">
+<div class="col-md-4 register-sec">
+<br>
+<h3 class="text-center">Recipient Registration</h3><br>
+<form #receivedOrganization="ngForm" (ngSubmit)="onSubmit()">
+<div class="form-group">
+  <label class ="lable_register" for="Name">Recipient Name</label>
+  <input type="text" class="form-control" id="name" placeholder="" [(ngModel)]="recipient.name" name="name">
+</div>
+<div class="form-group">
+  <label class ="lable_register" for="Password">Password</label>
+  <input type="text" class="form-control" id="password" placeholder="" [(ngModel)]="recipient.password" name="password">
+</div>
+<div class="form-group">
+  <label class ="lable_register" for="GroupStrength">Group Strength</label>
+  <input type="text" class="form-control" id="group_strength" placeholder="" [(ngModel)]="recipient.group_strength" name="group_strength">
+</div>
+<div class="form-group">
+  <label class ="lable_register" for="Address">Address</label>
+  <input type="text" class="form-control" id="address" placeholder="" [(ngModel)]="recipient.address" name="address">
+</div>
+<div class="form-group">
+  <label class ="lable_register" for="City">City</label>
+  <input type="text" class="form-control" id="city" placeholder="" [(ngModel)]="recipient.city" name="city">
+</div>
+<div class="form-group">
+  <label class ="lable_register" for="State">State</label>
+  <input type="text" class="form-control" id="state" placeholder="" [(ngModel)]="recipient.state" name="state">
+</div>
+<div class="form-group">
+  <label class ="lable_register" for="Phone">Phone</label>
+  <input type="text" class="form-control" id="phone" placeholder="" [(ngModel)]="recipient.phone" name="phone">
+</div>
+  <br>
+  <button class="btn btn-success">Register</button>
+  </form>
+  </div>
+  </div>
+  </div>
+  <div [hidden]="!submitted">
+  <h3 class="text-center">You Registered successfully!</h3>  
+</div>
+  </section>

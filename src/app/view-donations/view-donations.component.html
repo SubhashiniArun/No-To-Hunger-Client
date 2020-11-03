@@ -1,0 +1,27 @@
+<section class="donations-block jumbotron">
+<div class="container donations-data">
+<div class="col-md-10">
+<h3 class="jumbotron-heading text-center" style="color:#950740;">DONATIONS</h3>
+<br>
+<br>
+<table class="donations-table">
+    <thead>
+    <tr class="donations-head">
+    <th class="name-head">Organizations Name </th>
+    <th class="size-head">Donation Size</th>
+    <th class="location-head">Location</th>
+    <th class="phone-head">Contact Number</th>
+    </tr>
+    
+    <tr *ngFor="let donation of donations">
+    <td  class="name-data"> {{donation.organization_name}}</td>
+    <td  class="size-data">{{donation.donation_size}}</td>
+    <td  class="address-data">{{donation.address}}</td>
+    <td  class="phone-data">{{donation.contact_number}}</td>
+    <td  class="response-btn"><button type="button" (click)="enableDisableRule()" [ngClass]="{'green' : toggle, 'red': !toggle}"  class="btn btn-primary">Accept</button></td>
+    </tr>
+    </thead>
+    </table>
+</div>
+</div>
+</section>

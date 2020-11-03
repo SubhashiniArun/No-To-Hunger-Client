@@ -1,0 +1,49 @@
+mat-form-field {
+  display: block;
+}
+.btn{
+  background: #fff;  
+    color:#501B1D;
+}
+.makeDonations-card{
+  background-color:#AC3B61;
+  width:1000px;
+}
+.form-group{
+  text-align:left;
+  color:#fff;
+}
+
+.h3{
+  text-align:"center";
+  color:#fff;
+}
+.makeDonations-block{
+  background:#7E685A;
+  background:-webkit-linear-gradient(to bottom,#C2CAD0,#E3AFBC);
+  background: linear-gradient(to bottom,#C2CAD0,#E3AFBC);
+  float:left;
+  width:100%;
+  padding: 80px 0px 250px 0px; 
+  font-family:'Montserrrat','sans-serif';
+}
+mat-form-field {
+  display: block;
+  color:#070708;
+}
+::ng-deep .mat-form-field-flex > .mat-form-field-infix { padding: 0.8em 2px !important;}
+::ng-deep .mat-form-field-appearance-outline .mat-form-field-label { margin-top:-15px; }
+::ng-deep label.ng-star-inserted { transform: translateY(-0.59375em) scale(.75) !important; }
+.register-block{
+  background:#7E685A;
+  background:-webkit-linear-gradient(to bottom,#C2CAD0,#E3AFBC);
+  background: linear-gradient(to bottom,#C2CAD0,#E3AFBC);
+  float:left;
+  width:100%;
+  padding:10px 0px 300px 0px;
+  font-family:'Montserrrat','sans-serif';
+}
+.lable_register{
+  color:#070708;
+}
+

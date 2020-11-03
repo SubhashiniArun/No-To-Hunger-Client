@@ -1,0 +1,29 @@
+<section class="requests-block jumbotron">
+<div class="container requestdata">
+<div class="col-md-8">
+<h3 class="jumbotron-heading col-md-18" style="color:#950740; text-align:center;">ACTIVE FOOD REQUESTS</h3>
+<br>
+<br>
+<table class="requests-table">
+    <thead>
+    <tr class="request-head">
+    <th class="name-head">Recipient Name </th>
+    <th class="quantity-head">Request Quantity (No. of persons)</th>    
+    <th class="address">Address</th>
+    <th class="phone">Contact Number</th>
+    <th class="email">Email</th>
+    </tr>
+    
+    <tr *ngFor="let request of requests">
+    <td  class="name-data"> {{request.recipient_name}}</td>
+    <td  class="quantity-data">{{request.request_quantity}}</td>
+    <td  class="address">{{request.address}}</td>
+    <td  class="phone">{{request.phone}}</td>
+    <td  class="email">{{request.email}}</td>
+    <td  class="response-btn"><button type="button"  (click)="enableDisableRule()" [ngClass]="{'green' : toggle, 'red': !toggle}" class="btn btn-primary">Accept</button></td>
+    </tr>
+    </thead>
+    </table>
+</div>
+</div>
+</section>

@@ -1,0 +1,16 @@
+{
+  "ExpandedNodes": [
+    "",
+    "\\src",
+    "\\src\\app",
+    "\\src\\app\\donations",
+    "\\src\\app\\foodrequest",
+    "\\src\\app\\model",
+    "\\src\\app\\organizationlogin",
+    "\\src\\app\\recipientlogin",
+    "\\src\\app\\requests",
+    "\\src\\assets"
+  ],
+  "SelectedNode": "\\src\\app\\recipientlogin\\recipientregister\\recipientregister.component.html",
+  "PreviewInSolutionExplorer": false
+}

@@ -1,0 +1,33 @@
+table {
+   width: 100%;
+   }
+
+.donations-block{
+  background:#7E685A;
+  background:-webkit-linear-gradient(to bottom,#C2CAD0,#E3AFBC);
+  background: linear-gradient(to bottom,#C2CAD0,#E3AFBC);
+  float:left;
+  width:100%;
+  padding:100px 0px 430px 0px;
+  font-family:'Montserrrat','sans-serif';
+}
+
+td,th{
+font-size:18px;
+font-family:'Montserrrat','sans-serif';
+padding: 15px;
+text-align: left;
+}
+
+.btn{
+  background:#AC3B61;
+  border-color: #501B1D;
+}
+tr:nth-child(even) {background-color: #CB9EA3;}
+.green {
+    background-color: #AC3B61;
+}
+
+.red {
+    opacity: 0.10;
+}

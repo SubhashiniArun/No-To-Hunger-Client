@@ -1,0 +1,37 @@
+<section class="register-block">
+<div class="container signLog">
+<div class="row">
+<div class="col-md-4 register-sec">
+<br>
+<h2 class="text-center">Make Donations here!!</h2>
+<form #receivedOrganization="ngForm" (ngSubmit)="onSubmit()">
+<br><br>
+<div class="form-group">
+  <label class ="lable_register" for="Name">Organization Name</label>
+  <input type="text" class="form-control" id="name" placeholder="" [(ngModel)]="donation.organization_name" name="name">
+</div>
+
+<div class="form-group">
+  <label class ="lable_register" for="DonationSize">Donation Size</label>
+  <input type="text" class="form-control" id="donation_size" placeholder="No. of Persons" [(ngModel)]="donation.donation_size" name="donation_size">
+</div>
+
+<div class="form-group">
+  <label class ="lable_register" for="Address">Address</label>
+  <input type="text" class="form-control" id="city" placeholder="" [(ngModel)]="donation.address" name="address">
+</div>
+
+<div class="form-group">
+  <label class ="lable_register" for="ContactNumber">Contact Number</label>
+  <input type="text" class="form-control" id="contact_number" placeholder="" [(ngModel)]="donation.contact_number" name="contact_number">
+</div>
+ <br>
+  <button class="btn btn-success">Donate</button>
+  </form>
+  </div>
+  </div>
+  </div>
+  <div [hidden]="!submitted">
+  <h3 class="text-center">Donation made succesfully!!</h3>  
+</div>
+  </section>

@@ -1,0 +1,31 @@
+<section class="viewRecipients-block jumbotron">
+<div class="container recipients-data">
+<div class="col-md-10">
+<h3 class="jumbotron-heading text-center" style="color:#950740;">Registered Recipients</h3>
+<br>
+<br>
+<table class="viewRecipients-table">
+    <thead>
+    <tr class="viewRecipients-head">
+    <th class="name-head">Recipients Name </th>
+    <th class="groupStrength-head">Group Strength</th>
+    <th class="address-head">Address</th>
+    <th class="city-head">City</th>
+    <th class="state-head">State</th>
+    <th class="phone-head">Contact Number</th>
+    </tr>
+    
+    <tr *ngFor="let recipient of recipients">
+    <td  class="name-data"> {{recipient.name}}</td>
+    <td  class="groupStrength-data">{{recipient.group_strength}}</td>
+    <td  class="address-data">{{recipient.address}}</td>
+    <td  class="city-data">{{recipient.city}}</td>
+    <td  class="state-data">{{recipient.state}}</td>
+    <td  class="phone-data">{{recipient.phone}}</td>
+    </tr>
+    </thead>
+    </table>
+</div>
+</div>
+</section>
+

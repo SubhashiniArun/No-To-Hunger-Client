@@ -1,0 +1,38 @@
+<header>
+    <nav class="navbar navbar-expand-md navbar-dark bg-dark">
+    <a class="navbar-brand" href="/"></a>                        
+        
+    <ul class="navbar-nav">
+		<li class="nav-item">
+		<a class="active" href="/" id="navbarHome" style="width:100px;">Home</a>
+		</li>		
+		<li class="nav-item dropdown">    
+		<a *ngIf="!ologinService.isUserLoggedIn() && !rloginService.isUserLoggedIn()"  class="nav-link dropdown-toggle"  id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><span>Donor</span><span> </span></a>								
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a style="width:300px;" routerLink="/no-hunger/organizations/login" class="dropdown-item" >Donor Login</a>
+                        <a style="width:300px;" routerLink="/no-hunger/organizations/register" class="dropdown-item" >Donor Registration</a>                        
+                </div>
+     </li>		 
+		 <li class="nav-item dropdown">
+		 <a *ngIf="!ologinService.isUserLoggedIn() && !rloginService.isUserLoggedIn()" class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><span>Recipient</span><span> </span></a>
+		     <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+		           <a style="width:300px;"routerLink="/no-hunger/recipients/login" class="dropdown-item">Recipient Login</a>
+              <a style="width:300px;" routerLink="/no-hunger/recipients/register" class="dropdown-item">Recipient Registration</a> 	
+		      </div>
+		 </li>
+     <div *ngIf="ologinService.getRoleName() =='Donor'" class="navbar navbar-expand-md navbar-dark bg-dark">
+     <li><a routerLink="/no-hunger/organizations/requests" class="login-item">View Requests</a></li>
+     <li><a routerLink="/no-hunger/organizations/vrecipients" class="login-item">View Recipients</a></li>
+     <li><a routerLink="/no-hunger/organizations/donate" class="login-item">Make Donation</a></li>
+     <li><a class="user"><span class="Orgwelcome-tag">Logged in as</span>  donor </a></li>
+     
+     </div>
+     <div *ngIf="rloginService.getRoleName() =='Recipient'" class="navbar navbar-expand-md navbar-dark bg-dark">
+          <li><a routerLink="/no-hunger/recipients/donations" class="login-item">View Donations</a></li>
+		 <li><a routerLink="/no-hunger/recipients/requestfood" class="login-item">Request Food</a></li>
+     <li><a class="user"><span class="Recwelcome-tag">Logged in as</span>  recipient </a></li>
+     </div>
+     		 <li><a *ngIf="rloginService.isUserLoggedIn()" routerLink="/no-hunger/organizations/logout" class="login-item">Logout</a></li>
+     </ul>       
+    </nav>
+</header>
